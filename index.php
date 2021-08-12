@@ -1,10 +1,10 @@
 <?php
 include __DIR__ . '/Controllers/Home.php';
 include __DIR__ . '/settings.php';
-$home = new Home();
-try{
-    $request = $_SERVER['REQUEST_URI'];
-        switch ($request) {
+
+    try{
+        $home = new Home();
+        switch ($_SERVER['REQUEST_URI']) {
             case '/' :
             case '' :
                 require $home->showHomePage();
@@ -17,7 +17,8 @@ try{
                 require $home->showErrorPage();
                 break;
         }
-}catch(Exception $e){
-    error_log("Exception Message: ".$e->getMessage(), 3, $log_file);
-}
+    }catch(Exception $e){
+        error_log("Exception: ".$e->getMessage());
+    }
+
 ?>
