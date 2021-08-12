@@ -1,0 +1,6 @@
+[12-Aug-2021 17:19:13 Asia/Calcutta] hello
+[12-Aug-2021 17:19:31 Asia/Calcutta] hello
+[12-Aug-2021 17:19:31 Asia/Calcutta] PHP Notice:  Undefined variable: hom in /var/www/core-php/index.php on line 17
+[12-Aug-2021 17:19:31 Asia/Calcutta] PHP Fatal error:  Call to a member function showAboutPage() on null in /var/www/core-php/index.php on line 17
+[12-Aug-2021 17:21:30 Asia/Calcutta] PHP Notice:  Undefined variable: hom in /var/www/core-php/index.php on line 13
+[12-Aug-2021 17:21:30 Asia/Calcutta] PHP Fatal error:  Call to a member function showAboutPage() on null in /var/www/core-php/index.php on line 13
