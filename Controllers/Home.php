@@ -1,10 +1,15 @@
 <?php
 
+include __DIR__ . '/../Models/User.php';
+
 class Home
 {
 
     public function showHomePage()
     {
+        $obj = new User();
+        $data = $obj->getUsers();
+        $_GET['data'] = $data;
         return  __DIR__ . '/../views/index.php';
     }
 

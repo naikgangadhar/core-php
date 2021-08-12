@@ -1,6 +1,6 @@
 <?php
 
-namespace Models;
+//namespace Models;
 
 abstract class AbstractModel
 {
@@ -12,13 +12,12 @@ abstract class AbstractModel
         $this->connection = new mysqli($servername, $user, $password, $dbname);
 
         if ($this->connection->connect_error) {
-            die("Connection failed: " . $this->connection->connect_error);
+            error_log("Connection failed: " . $this->connection->connect_error);
         }
     }
 
     public function __destruct()
     {
-
         $this->connection->close();
     }
 
@@ -96,7 +95,7 @@ abstract class AbstractModel
         }
     }
 
-    protected function getRows($table, $selector = [], $where = [], $order_col = "", $order = "ASC")
+    protected function getRows($table, $selector = [], $where = [], $order_col = "", $order = "")
     {
         try {
             if (empty($table))

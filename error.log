@@ -8,3 +8,21 @@
 [12-Aug-2021 18:09:07 Asia/Calcutta] PHP Fatal error:  Call to a member function showAboutPage() on null in /var/www/core-php/index.php on line 13
 [12-Aug-2021 18:10:50 Asia/Calcutta] PHP Notice:  Undefined variable: hom in /var/www/core-php/index.php on line 13
 [12-Aug-2021 18:10:50 Asia/Calcutta] PHP Fatal error:  Call to a member function showAboutPage() on null in /var/www/core-php/index.php on line 13
+[12-Aug-2021 22:41:12 Asia/Calcutta] PHP Fatal error:  Class 'Models\User' not found in /var/www/core-php/Controllers/Home.php on line 10
+[12-Aug-2021 22:42:31 Asia/Calcutta] PHP Fatal error:  Class 'Models\User' not found in /var/www/core-php/Controllers/Home.php on line 10
+[12-Aug-2021 22:49:36 Asia/Calcutta] yess
+[12-Aug-2021 22:49:49 Asia/Calcutta] yess
+[12-Aug-2021 22:50:22 Asia/Calcutta] SELECT  *  FROM user  ASC
+[12-Aug-2021 22:50:33 Asia/Calcutta] SELECT  *  FROM user  
+[12-Aug-2021 22:50:57 Asia/Calcutta] PHP Warning:  error_log() expects parameter 1 to be string, object given in /var/www/core-php/Models/AbstractModel.php on line 112
+[12-Aug-2021 22:51:49 Asia/Calcutta] PHP Warning:  error_log() expects parameter 1 to be string, object given in /var/www/core-php/Models/AbstractModel.php on line 112
+[12-Aug-2021 22:51:59 Asia/Calcutta] 1
+[12-Aug-2021 22:54:09 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/Home.php on line 12
+[12-Aug-2021 22:57:08 Asia/Calcutta] PHP Notice:  Undefined variable: data in /var/www/core-php/views/index.php on line 2
+[12-Aug-2021 23:10:22 Asia/Calcutta] PHP Notice:  Undefined variable: data in /var/www/core-php/views/index.php on line 2
+[12-Aug-2021 23:10:59 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 10
+[12-Aug-2021 23:10:59 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 10
+[12-Aug-2021 23:11:05 Asia/Calcutta] PHP Notice:  Undefined variable: data in /var/www/core-php/views/index.php on line 2
+[12-Aug-2021 23:14:02 Asia/Calcutta] PHP Notice:  Undefined variable: value in /var/www/core-php/views/index.php on line 3
+[12-Aug-2021 23:15:21 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/views/index.php on line 4
+[12-Aug-2021 23:21:00 Asia/Calcutta] clossed
