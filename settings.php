@@ -1,9 +1,9 @@
 <?php
-
+if (!defined('DOCUMENT_ROOT')) define('DOCUMENT_ROOT', __DIR__);
 spl_autoload_register(function ($className) {
 
     $className = str_replace("\\", DIRECTORY_SEPARATOR, $className);
-    include_once $_SERVER['DOCUMENT_ROOT'] . '/../' . $className . '.php';
+    include_once DOCUMENT_ROOT . '/' . $className . '.php';
 });
 
 if (!defined('ERROR_LOG')) define('ERROR_LOG', __DIR__ . '/error.log');
