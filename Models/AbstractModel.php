@@ -1,6 +1,9 @@
 <?php
 
-//namespace Models;
+namespace Models;
+
+use mysqli;
+use Exception;
 
 abstract class AbstractModel
 {
@@ -27,19 +30,12 @@ abstract class AbstractModel
             if (empty($table) || empty($Asc_Array))
                 return false;
 
-            $col = $val = "";
             $col = "('" . implode("','", array_keys($Asc_Array)) . "')";
             $val = "('" . implode("','", array_values($Asc_Array)) . "')";
 
             $sql = "INSERT INTO " . $table . $col . " VALUES " . $val;
 
-            if ($this->connection->query($sql) === TRUE) {
-                echo "New record created successfully";
-                return true;
-            } else {
-                echo "Error: " . $sql . "<br>" . $this->connection->error;
-                return false;
-            }
+            return $this->runQuery($sql);
         } catch (Exception $e) {
             error_log("Exception: " . $e->getMessage());
         }
@@ -51,19 +47,12 @@ abstract class AbstractModel
             if (empty($table) || empty($Asc_Array))
                 return false;
 
-            $col = $val = "";
             $col = "('" . implode("','", array_keys($Asc_Array)) . "')";
             $val = "('" . implode("','", array_values($Asc_Array)) . "')";
 
             $sql = "INSERT INTO " . $table . $col . " VALUES " . $val;
 
-            if ($this->connection->query($sql) === TRUE) {
-                echo "New record created successfully";
-                return $this->connection->insert_id;
-            } else {
-                echo "Error: " . $sql . "<br>" . $this->connection->error;
-                return false;
-            }
+            return $this->runQuery($sql) ? $this->connection->insert_id : false;
         } catch (Exception $e) {
             error_log("Exception: " . $e->getMessage());
         }
@@ -75,21 +64,14 @@ abstract class AbstractModel
             if (empty($table) || empty($Asc_Array))
                 return false;
 
-            $col = $val = $sql = "";
+            $sql = "";
             foreach ($Asc_Array as $key => $row) {
                 $col = "('" . implode("','", array_keys($row)) . "')";
                 $val = "('" . implode("','", array_values($row)) . "')";
-
                 $sql .= "INSERT INTO " . $table . $col . " VALUES " . $val . ";";
             }
 
-            if ($this->connection->query($sql) === TRUE) {
-                echo "New records created successfully";
-                return true;
-            } else {
-                echo "Error: " . $sql . "<br>" . $this->connection->error;
-                return false;
-            }
+            return $this->runQuery($sql);
         } catch (Exception $e) {
             error_log("Exception: " . $e->getMessage());
         }
@@ -107,8 +89,32 @@ abstract class AbstractModel
             $clause = strlen($clause) > 0 ? " WHERE " . substr($clause, 0, -3) : "";
             $sel = !empty($selector) ? implode(", ", array_keys($selector)) : ' * ';
             $sql = "SELECT " . $sel . " FROM " . $table . $clause . " " . $order_col . " " . $order;
-            $result = $this->connection->query($sql);
+            $result = $this->runSql($sql);
             return $result;
+        } catch (Exception $e) {
+            error_log("Exception: " . $e->getMessage());
+        }
+    }
+
+    private function runQuery($sql = "")
+    {
+        try {
+            if ($this->runSql($sql) === TRUE) {
+                echo $sql . " Query Ran successfully";
+                return true;
+            } else {
+                echo "Error: " . $sql . "<br>" . $this->connection->error;
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log("Exception: " . $e->getMessage());
+        }
+    }
+
+    private function runSql($sql = "")
+    {
+        try {
+            return $this->connection->query($sql);
         } catch (Exception $e) {
             error_log("Exception: " . $e->getMessage());
         }

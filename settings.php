@@ -1,4 +1,11 @@
 <?php
+
+spl_autoload_register(function ($className) {
+
+    $className = str_replace("\\", DIRECTORY_SEPARATOR, $className);
+    include_once $_SERVER['DOCUMENT_ROOT'] . '/../' . $className . '.php';
+});
+
 if (!defined('ERROR_LOG')) define('ERROR_LOG', __DIR__ . '/error.log');
 ini_set("log_errors", TRUE);
 ini_set('error_log', ERROR_LOG);

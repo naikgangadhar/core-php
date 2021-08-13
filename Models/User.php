@@ -1,7 +1,8 @@
 <?php
 
-//namespace Models;
-include __DIR__ . '/AbstractModel.php';
+namespace Models;
+
+use Exception;
 
 class User extends AbstractModel
 {

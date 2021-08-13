@@ -1,6 +1,8 @@
 <?php
-include __DIR__ . '/Controllers/Home.php';
+
 include __DIR__ . '/settings.php';
+
+use Controllers\Home;
 
 try {
     $home = new Home();

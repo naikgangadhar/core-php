@@ -1,6 +1,9 @@
 <?php
 
-include __DIR__ . '/../Models/User.php';
+namespace Controllers;
+
+use Models\User;
+
 
 class Home
 {
