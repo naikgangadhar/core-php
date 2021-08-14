@@ -8,7 +8,9 @@ use Exception;
 abstract class AbstractModel
 {
 
-    protected $connection = null;
+    protected $connection;
+
+    protected $table;
 
     public function __construct($servername, $user, $password, $dbname)
     {
@@ -24,16 +26,16 @@ abstract class AbstractModel
         $this->connection->close();
     }
 
-    protected function insertRow($table, $Asc_Array = [])
+    protected function insertRow($Asc_Array = [])
     {
         try {
-            if (empty($table) || empty($Asc_Array))
+            if (empty($this->table) || empty($Asc_Array))
                 return false;
 
             $col = "('" . implode("','", array_keys($Asc_Array)) . "')";
             $val = "('" . implode("','", array_values($Asc_Array)) . "')";
 
-            $sql = "INSERT INTO " . $table . $col . " VALUES " . $val;
+            $sql = "INSERT INTO " . $this->table . $col . " VALUES " . $val;
 
             return $this->runQuery($sql);
         } catch (Exception $e) {
@@ -41,16 +43,16 @@ abstract class AbstractModel
         }
     }
 
-    protected function insertRowGetID($table, $Asc_Array = [])
+    protected function insertRowGetID($Asc_Array = [])
     {
         try {
-            if (empty($table) || empty($Asc_Array))
+            if (empty($this->table) || empty($Asc_Array))
                 return false;
 
             $col = "('" . implode("','", array_keys($Asc_Array)) . "')";
             $val = "('" . implode("','", array_values($Asc_Array)) . "')";
 
-            $sql = "INSERT INTO " . $table . $col . " VALUES " . $val;
+            $sql = "INSERT INTO " . $this->table . $col . " VALUES " . $val;
 
             return $this->runQuery($sql) ? $this->connection->insert_id : false;
         } catch (Exception $e) {
@@ -58,29 +60,29 @@ abstract class AbstractModel
         }
     }
 
-    protected function insertMultipleRow($table, $Asc_Array = [])
+    protected function insertMultipleRow($Asc_Array = [])
     {
         try {
-            if (empty($table) || empty($Asc_Array))
+            if (empty($this->table) || empty($Asc_Array))
                 return false;
 
             $sql = "";
             foreach ($Asc_Array as $key => $row) {
                 $col = "('" . implode("','", array_keys($row)) . "')";
                 $val = "('" . implode("','", array_values($row)) . "')";
-                $sql .= "INSERT INTO " . $table . $col . " VALUES " . $val . ";";
+                $sql .= "INSERT INTO " . $this->table . $col . " VALUES " . $val . ";";
             }
 
-            return $this->runQuery($sql);
+            return $this->connection->multi_query($sql);
         } catch (Exception $e) {
             error_log("Exception: " . $e->getMessage());
         }
     }
-
-    protected function getRows($table, $selector = [], $where = [], $order_col = "", $order = "")
+    #For child class table simple query, varable names stands as they mean 
+    protected function getRows($selector = [], $where = [], $order_col = "", $order = "")
     {
         try {
-            if (empty($table))
+            if (empty($this->table))
                 return false;
             $clause = "";
             foreach ($where as $key => $val) {
@@ -88,7 +90,7 @@ abstract class AbstractModel
             }
             $clause = strlen($clause) > 0 ? " WHERE " . substr($clause, 0, -3) : "";
             $sel = !empty($selector) ? implode(", ", array_keys($selector)) : ' * ';
-            $sql = "SELECT " . $sel . " FROM " . $table . $clause . " " . $order_col . " " . $order;
+            $sql = "SELECT " . $sel . " FROM " . $this->table . $clause . " " . $order_col . " " . $order;
             $result = $this->runSql($sql);
             return $result;
         } catch (Exception $e) {
@@ -110,8 +112,8 @@ abstract class AbstractModel
             error_log("Exception: " . $e->getMessage());
         }
     }
-
-    private function runSql($sql = "")
+    #Avilable for child class to run complex Query like joins
+    protected function runSql($sql = "")
     {
         try {
             return $this->connection->query($sql);

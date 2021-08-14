@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Models\User;
+use Models\Post;
 
 
 class Home
@@ -10,8 +11,12 @@ class Home
 
     public function showHomePage()
     {
-        $obj = new User();
-        $data = $obj->getUsers();
+        $user = new User();
+        $post = new Post();
+        $user_id = 1;
+        $data['user_data'] = $user->getUser($user_id);
+        $data['posts'] = $post->getPosts($user_id);
+
         $_GET['data'] = $data;
         return  __DIR__ . '/../views/index.php';
     }

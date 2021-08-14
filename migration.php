@@ -9,11 +9,11 @@ class migration
 {
     protected $connection;
 
-    protected $ranMigrations = [];
+    private $ranMigrations = [];
 
-    protected $lastBatch = [];
+    private $lastBatch = [];
 
-    protected $batch_id = 1;
+    private $batch_id = 1;
 
     public function __construct($type = "")
     {
@@ -21,17 +21,7 @@ class migration
 
         $this->setRanMigrations();
 
-        if ($type == "" || $type == 'run') {
-            if ($this->runMigrations() === TRUE)
-                echo "Migration Ran successfully";
-            else
-                echo "Error:" . $this->connection->error;
-        } else if ($type == 'rollback') {
-            if ($this->rollbackMigrations() === TRUE)
-                echo "Rollbacked Last Migration successfully";
-            else
-                echo "Error:" . $this->connection->error;
-        }
+        $this->runMigration($type);
     }
 
     public function __destruct()
@@ -58,8 +48,10 @@ class migration
             }
         }
         $this->lastBatch = $this->lastBatch[$this->batch_id];
+        print_r($this->lastBatch);
     }
-    protected function runMigrations()
+
+    private function migrate()
     {
         $Query = "";
         foreach (glob(DOCUMENT_ROOT . '/migrations/*.php') as $file) {
@@ -72,7 +64,7 @@ class migration
         return $this->connection->multi_query($Query);
     }
 
-    protected function rollbackMigrations()
+    private function rollbackMigrations()
     {
         foreach ($this->lastBatch as $migration) {
             $class = "migrations\\" . $migration;
@@ -83,8 +75,33 @@ class migration
 
     protected function runQuery($sql = "")
     {
-        return $this->connection->query($sql);
+        try {
+            if ($this->connection->query($sql) === TRUE) {
+                return true;
+            } else {
+                echo "Error: " . $sql . "<br>" . $this->connection->error;
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log("Exception: " . $e->getMessage());
+        }
+    }
+
+    protected function runMigration($type = "")
+    {
+        if ($type == "" || $type == 'run') {
+            if ($this->migrate() === TRUE)
+                echo "Migration Ran successfully";
+            else
+                echo "Error:" . $this->connection->error;
+        } else if ($type == 'rollback') {
+            if ($this->rollbackMigrations() === TRUE)
+                echo "Rollbacked Last Migration successfully";
+            else
+                echo "Error:" . $this->connection->error;
+        }
     }
 }
+
 $type = !empty($argv[1]) ? $argv[1] : "";
 new migration($type);
