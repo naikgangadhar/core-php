@@ -1,23 +1,21 @@
 <?php
 
 include __DIR__ . '/settings.php';
+include __DIR__ . '/Routes.php';
 
 use Controllers\Home;
 
 try {
-    $home = new Home();
-    switch ($_SERVER['REQUEST_URI']) {
-        case '/':
-        case '':
-            require $home->showHomePage();
-            break;
-        case '/about':
-            require $hom->showAboutPage();
-            break;
-        default:
-            http_response_code(404);
-            require $home->showErrorPage();
-            break;
+    $method = array_get(ROUTES, $_SERVER['REQUEST_URI'] . "." . $_SERVER['REQUEST_METHOD']);
+    $method = explode("@", $method);
+    if (!empty($method[0]) && !empty($method[1])) {
+        $class = "Controllers" . '\\' . $method[0];
+        $class = new $class();
+        require $class->$method[1]();
+    } else {
+        $home = new Home();
+        http_response_code(404);
+        require $home->showErrorPage();
     }
 } catch (Exception $e) {
     error_log("Exception: " . $e->getMessage());
