@@ -16,7 +16,6 @@ class Home
         $user_id = 1;
         $data['user_data'] = $user->getUser($user_id);
         $data['posts'] = $post->getPosts($user_id);
-
         $_GET['data'] = $data;
         return  __DIR__ . '/../views/index.php';
     }
