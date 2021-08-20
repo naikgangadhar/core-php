@@ -9,7 +9,11 @@ class AuthMiddleware
     public function validateLogin()
     {
         session_start();
-        if ((empty($_SESSION) || empty($_SESSION["user_id"])) && $_SERVER['REQUEST_METHOD'] == 'GET') {
+        if ((empty($_SESSION) ||
+                empty($_SESSION["user_id"])) &&
+            $_SERVER['REQUEST_METHOD'] == 'GET' &&
+            $_SERVER['REQUEST_URI'] != '/registration'
+        ) {
             $Login = new Login();
             require $Login->loginPage();
             break;

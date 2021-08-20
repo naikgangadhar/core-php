@@ -13,9 +13,8 @@ class Home
     {
         $user = new User();
         $post = new Post();
-        $user_id = 1;
-        $data['user_data'] = $user->getUser($user_id);
-        $data['posts'] = $post->getPosts($user_id);
+        $data['user_data'] = $user->getUser($_SESSION["user_id"]);
+        $data['posts'] = $post->getPosts($_SESSION["user_id"]);
         $_GET['data'] = $data;
         return  __DIR__ . '/../views/index.php';
     }

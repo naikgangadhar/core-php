@@ -26,13 +26,13 @@ abstract class AbstractModel
         $this->connection->close();
     }
 
-    protected function insertRow($Asc_Array = [])
+    public function insertRow($Asc_Array = [])
     {
         try {
             if (empty($this->table) || empty($Asc_Array))
                 return false;
 
-            $col = "('" . implode("','", array_keys($Asc_Array)) . "')";
+            $col = "(" . implode(",", array_keys($Asc_Array)) . ")";
             $val = "('" . implode("','", array_values($Asc_Array)) . "')";
 
             $sql = "INSERT INTO " . $this->table . $col . " VALUES " . $val;
@@ -43,13 +43,13 @@ abstract class AbstractModel
         }
     }
 
-    protected function insertRowGetID($Asc_Array = [])
+    public function insertRowGetID($Asc_Array = [])
     {
         try {
             if (empty($this->table) || empty($Asc_Array))
                 return false;
 
-            $col = "('" . implode("','", array_keys($Asc_Array)) . "')";
+            $col = "(" . implode(",", array_keys($Asc_Array)) . ")";
             $val = "('" . implode("','", array_values($Asc_Array)) . "')";
 
             $sql = "INSERT INTO " . $this->table . $col . " VALUES " . $val;
@@ -60,7 +60,7 @@ abstract class AbstractModel
         }
     }
 
-    protected function insertMultipleRow($Asc_Array = [])
+    public function insertMultipleRow($Asc_Array = [])
     {
         try {
             if (empty($this->table) || empty($Asc_Array))
@@ -79,14 +79,14 @@ abstract class AbstractModel
         }
     }
     #For child class table simple query, varable names stands as they mean 
-    protected function getRows($selector = [], $where = [], $order_col = "", $order = "")
+    public function getRows($selector = [], $where = [], $order_col = "", $order = "")
     {
         try {
             if (empty($this->table))
                 return false;
             $clause = "";
             foreach ($where as $key => $val) {
-                $clause .= $key . "=" . $val . "AND";
+                $clause .= $key . "=" . "'" . $val . "'" . "AND";
             }
             $clause = strlen($clause) > 0 ? " WHERE " . substr($clause, 0, -3) : "";
             $sel = !empty($selector) ? implode(", ", array_keys($selector)) : ' * ';
@@ -102,10 +102,9 @@ abstract class AbstractModel
     {
         try {
             if ($this->runSql($sql) === TRUE) {
-                echo $sql . " Query Ran successfully";
                 return true;
             } else {
-                echo "Error: " . $sql . "<br>" . $this->connection->error;
+                error_log("Error: " . $sql . "<br>" . $this->connection->error);
                 return false;
             }
         } catch (Exception $e) {
