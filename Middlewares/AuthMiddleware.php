@@ -9,8 +9,7 @@ class AuthMiddleware
     public function validateLogin()
     {
         session_start();
-        if ((empty($_SESSION) ||
-                empty($_SESSION["user_id"])) &&
+        if ((empty($_SESSION) || empty($_SESSION["user_id"])) &&
             $_SERVER['REQUEST_METHOD'] == 'GET' &&
             $_SERVER['REQUEST_URI'] != '/registration'
         ) {

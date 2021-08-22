@@ -26,3 +26,515 @@
 [12-Aug-2021 23:14:02 Asia/Calcutta] PHP Notice:  Undefined variable: value in /var/www/core-php/views/index.php on line 3
 [12-Aug-2021 23:15:21 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/views/index.php on line 4
 [12-Aug-2021 23:21:00 Asia/Calcutta] clossed
+[13-Aug-2021 12:03:51 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 6
+[13-Aug-2021 12:22:39 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 6
+[13-Aug-2021 12:46:35 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 6
+[13-Aug-2021 12:48:16 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 6
+[13-Aug-2021 12:49:05 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 6
+[13-Aug-2021 12:50:26 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 6
+[13-Aug-2021 12:59:53 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 9
+[13-Aug-2021 12:59:59 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 9
+[13-Aug-2021 13:01:05 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 9
+[13-Aug-2021 13:01:06 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 9
+[13-Aug-2021 13:19:13 Asia/Calcutta] PHP Fatal error:  Class 'User' not found in /var/www/core-php/Controllers/Home.php on line 14
+[13-Aug-2021 13:19:33 Asia/Calcutta] PHP Fatal error:  Class 'User' not found in /var/www/core-php/Controllers/Home.php on line 15
+[13-Aug-2021 16:19:46 Asia/Calcutta] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /var/www/core-php/runMigration.php on line 11
+[13-Aug-2021 16:22:05 Asia/Calcutta] PHP Fatal error:  Call to undefined function array_get() in /var/www/core-php/runMigration.php on line 14
+[13-Aug-2021 18:20:51 Asia/Calcutta] PHP Fatal error:  Using $this when not in object context in /var/www/core-php/runMigration.php on line 40
+[13-Aug-2021 19:37:32 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/public/class/Controllers/Home.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 5
+[13-Aug-2021 19:37:32 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/public/class/Controllers/Home.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 5
+[13-Aug-2021 19:37:32 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 12
+[13-Aug-2021 19:38:11 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/public/class/Controllers/Home.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 5
+[13-Aug-2021 19:38:11 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/public/class/Controllers/Home.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 5
+[13-Aug-2021 19:38:11 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 12
+[13-Aug-2021 19:39:12 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/public/class/Controllers/Home.php): failed to open stream: No such file or directory in /var/www/core-php/index.php on line 5
+[13-Aug-2021 19:39:12 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/public/class/Controllers/Home.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 5
+[13-Aug-2021 19:39:12 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\Home' not found in /var/www/core-php/index.php on line 16
+[13-Aug-2021 19:41:33 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/public/../Controllers/User.php): failed to open stream: No such file or directory in /var/www/core-php/index.php on line 6
+[13-Aug-2021 19:41:33 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/public/../Controllers/User.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 6
+[13-Aug-2021 19:41:33 Asia/Calcutta] PHP Fatal error:  Class 'Controllers\User' not found in /var/www/core-php/Controllers/Home.php on line 13
+[13-Aug-2021 19:43:41 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/public/../Models/mysqli.php): failed to open stream: No such file or directory in /var/www/core-php/index.php on line 6
+[13-Aug-2021 19:43:41 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/public/../Models/mysqli.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 6
+[13-Aug-2021 19:43:41 Asia/Calcutta] PHP Fatal error:  Class 'Models\mysqli' not found in /var/www/core-php/Models/AbstractModel.php on line 12
+[13-Aug-2021 20:28:34 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:28:34 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:28:34 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:41:59 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:41:59 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:41:59 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:42:08 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:42:08 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:42:08 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:42:28 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:42:28 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:42:28 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:43:14 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:43:14 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:43:14 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:46:42 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:46:42 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:46:42 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:46:49 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:46:49 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:46:49 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 13
+[13-Aug-2021 20:47:16 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:47:16 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:47:16 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 14
+[13-Aug-2021 20:56:33 Asia/Calcutta] PHP Warning:  include_once(/../poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:56:33 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/../poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:56:33 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 15
+[13-Aug-2021 20:57:53 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/poststable.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:57:53 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/poststable.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[13-Aug-2021 20:57:53 Asia/Calcutta] PHP Fatal error:  Class 'poststable' not found in /var/www/core-php/migrationclass.php on line 14
+[13-Aug-2021 21:01:22 Asia/Calcutta] PHP Notice:  Undefined property: migrations\poststable::$UP in /var/www/core-php/migrationclass.php on line 15
+[13-Aug-2021 21:02:18 Asia/Calcutta] PHP Catchable fatal error:  Object of class migrations\poststable could not be converted to string in /var/www/core-php/migrationclass.php on line 15
+[13-Aug-2021 23:17:27 Asia/Calcutta] PHP Notice:  Undefined variable: batch_id in /var/www/core-php/migrationclass.php on line 55
+[13-Aug-2021 23:51:53 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in /var/www/core-php/migrationclass.php on line 88
+[13-Aug-2021 23:54:11 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in /var/www/core-php/migrationclass.php on line 88
+[13-Aug-2021 23:57:36 Asia/Calcutta] PHP Fatal error:  Class 'migrations\usertable' not found in /var/www/core-php/migrationclass.php on line 77
+[14-Aug-2021 00:07:00 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/views/index.php on line 4
+[14-Aug-2021 00:07:00 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 4
+[14-Aug-2021 17:22:47 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/migration.php on line 51
+[14-Aug-2021 17:22:47 Asia/Calcutta] PHP Fatal error:  Class 'migrations\usertsable' not found in /var/www/core-php/migration.php on line 60
+[14-Aug-2021 17:23:53 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/migration.php on line 51
+[14-Aug-2021 18:48:53 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/views/index.php on line 52
+[14-Aug-2021 18:48:53 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 52
+[14-Aug-2021 18:52:21 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/views/index.php on line 52
+[14-Aug-2021 18:52:21 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 52
+[14-Aug-2021 18:52:36 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/Home.php on line 19
+[14-Aug-2021 18:52:53 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/views/index.php on line 52
+[14-Aug-2021 18:52:53 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 52
+[14-Aug-2021 18:53:37 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/views/index.php on line 53
+[14-Aug-2021 18:53:37 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 53
+[14-Aug-2021 18:53:43 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/views/index.php on line 54
+[16-Aug-2021 12:48:23 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 9
+[16-Aug-2021 12:51:25 Asia/Calcutta] PHP Notice:  Undefined index: \ in /var/www/core-php/index.php on line 9
+[16-Aug-2021 12:51:38 Asia/Calcutta] PHP Notice:  Undefined index: \ in /var/www/core-php/index.php on line 9
+[16-Aug-2021 12:52:00 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 9
+[16-Aug-2021 12:52:10 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 9
+[16-Aug-2021 13:23:00 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 9
+[16-Aug-2021 13:23:00 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 9
+[16-Aug-2021 13:23:00 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 9
+[16-Aug-2021 13:23:00 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 9
+[16-Aug-2021 13:23:16 Asia/Calcutta] PHP Notice:  Undefined index: \about in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:04 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:05 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:05 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:15 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:15 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:15 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:15 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:32 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:24:37 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/index.php on line 10
+[16-Aug-2021 13:25:14 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 13
+[16-Aug-2021 13:25:14 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 13
+[16-Aug-2021 13:26:07 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 13
+[16-Aug-2021 13:26:27 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 13
+[16-Aug-2021 13:26:38 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 13
+[16-Aug-2021 13:27:12 Asia/Calcutta] PHP Notice:  Use of undefined constant ROUTES - assumed 'ROUTES' in /var/www/core-php/index.php on line 13
+[16-Aug-2021 13:34:08 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Home.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:34:08 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Home.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:34:08 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 12
+[16-Aug-2021 13:34:09 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Home.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:34:09 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Home.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:34:09 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 12
+[16-Aug-2021 13:34:48 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Home.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:34:48 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Home.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:34:48 Asia/Calcutta] PHP Fatal error:  Class 'Home' not found in /var/www/core-php/index.php on line 12
+[16-Aug-2021 13:40:42 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Controllers.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:40:42 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:40:42 Asia/Calcutta] PHP Fatal error:  Class 'Controllers' not found in /var/www/core-php/index.php on line 14
+[16-Aug-2021 13:41:06 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Controllers.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:41:06 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:41:06 Asia/Calcutta] PHP Fatal error:  Class 'Controllers' not found in /var/www/core-php/index.php on line 14
+[16-Aug-2021 13:41:39 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Controllers.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:41:39 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:41:39 Asia/Calcutta] PHP Fatal error:  Class 'Controllers' not found in /var/www/core-php/index.php on line 14
+[16-Aug-2021 13:41:49 Asia/Calcutta] PHP Warning:  include_once(/var/www/core-php/Controllers.php): failed to open stream: No such file or directory in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:41:49 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/var/www/core-php/Controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/settings.php on line 6
+[16-Aug-2021 13:41:49 Asia/Calcutta] PHP Fatal error:  Class 'Controllers' not found in /var/www/core-php/index.php on line 14
+[16-Aug-2021 13:43:32 Asia/Calcutta] PHP Fatal error:  Class 'Controllers/Home' not found in /var/www/core-php/index.php on line 15
+[16-Aug-2021 13:54:50 Asia/Calcutta] PHP Notice:  Undefined variable: home in /var/www/core-php/index.php on line 14
+[16-Aug-2021 13:54:50 Asia/Calcutta] PHP Fatal error:  Call to a member function showAboutPage() on null in /var/www/core-php/index.php on line 14
+[16-Aug-2021 17:39:58 Asia/Calcutta] PHP Notice:  Undefined index: data in /var/www/core-php/views/index.php on line 55
+[16-Aug-2021 17:39:58 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 55
+[16-Aug-2021 17:40:00 Asia/Calcutta] PHP Notice:  Undefined index: data in /var/www/core-php/views/index.php on line 55
+[16-Aug-2021 17:40:00 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /var/www/core-php/views/index.php on line 55
+[16-Aug-2021 17:46:50 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 14
+[16-Aug-2021 17:46:50 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 14
+[16-Aug-2021 18:13:45 Asia/Calcutta] PHP Notice:  Undefined property: Controllers\Login::$loginPage in /var/www/core-php/Middlewares/AuthMiddleware.php on line 13
+[16-Aug-2021 18:13:49 Asia/Calcutta] PHP Notice:  Undefined property: Controllers\Login::$loginPage in /var/www/core-php/Middlewares/AuthMiddleware.php on line 13
+[16-Aug-2021 18:14:23 Asia/Calcutta] PHP Notice:  Undefined variable: _SESSION in /var/www/core-php/Middlewares/AuthMiddleware.php on line 11
+[16-Aug-2021 18:28:21 Asia/Calcutta] PHP Notice:  Undefined variable: _SESSION in /var/www/core-php/Middlewares/AuthMiddleware.php on line 11
+[16-Aug-2021 19:36:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:36:29 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:37:55 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:37:55 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:39:16 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:39:16 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:39:29 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:39:29 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:40:11 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:40:12 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:40:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 19:40:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:20:29 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:20:31 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:20:32 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:20:35 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:20:43 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:20:55 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:23:46 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:23:46 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:23:46 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:24:25 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:24:57 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:49:12 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:49:18 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:49:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:49:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 20:49:34 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 21:02:54 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 21:03:35 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 21:04:49 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 21:09:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 22:40:03 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 22:40:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 22:42:01 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 14
+[16-Aug-2021 22:49:05 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:49:08 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:49:25 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:50:37 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:18 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:20 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:24 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:31 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:35 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:51:51 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[16-Aug-2021 22:55:38 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:56:07 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:56:20 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:57:01 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:58:30 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 22:58:48 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:01:34 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:02:11 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:25:08 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:43:54 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:44:08 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:45:09 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:48:48 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[16-Aug-2021 23:51:04 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[17-Aug-2021 12:00:04 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 12:00:10 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 12:00:16 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 12:00:17 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 13:57:46 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 13:58:38 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[17-Aug-2021 15:21:44 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 15:21:52 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 18:16:27 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 18:16:30 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[17-Aug-2021 18:16:42 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[17-Aug-2021 18:19:19 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[17-Aug-2021 19:13:13 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 14:33:40 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 14:33:43 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 14:35:50 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 14:37:21 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 14:38:16 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 15:39:34 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 15:39:38 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 15:44:15 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 17:36:33 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 17:36:54 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 17:36:57 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 17:37:00 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 17:41:18 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 14
+[18-Aug-2021 17:59:14 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[18-Aug-2021 17:59:14 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[18-Aug-2021 17:59:30 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[18-Aug-2021 17:59:30 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[18-Aug-2021 19:21:45 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:21:47 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:21:49 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:21:50 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:21:54 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:21:56 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:25 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:48 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:51 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:52 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:53 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:22:53 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:23:56 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:24:45 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:13 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:13 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:14 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:14 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:14 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:14 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:21 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:25:59 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:26:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:26:28 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 15
+[18-Aug-2021 19:29:48 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[18-Aug-2021 19:29:53 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[18-Aug-2021 19:29:56 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[18-Aug-2021 20:05:41 Asia/Calcutta] PHP Fatal error:  Call to protected method Models\AbstractModel::insertRow() from context 'Controllers\Login' in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:05:58 Asia/Calcutta] PHP Fatal error:  Call to protected method Models\AbstractModel::insertRow() from context 'Controllers\Login' in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:06:48 Asia/Calcutta] PHP Notice:  Undefined variable: gangaa in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:06:48 Asia/Calcutta] PHP Notice:  Undefined variable: 12222 in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:06:48 Asia/Calcutta] PHP Notice:  Undefined variable: naikgangadhar77@gmail.com in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:07:40 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /var/www/core-php/Controllers/Login.php on line 25
+[18-Aug-2021 20:07:40 Asia/Calcutta] PHP Notice:  Undefined variable: ss in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:07:40 Asia/Calcutta] PHP Notice:  Undefined variable: 1111 in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:07:40 Asia/Calcutta] PHP Notice:  Undefined variable: naik@gamil.com in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:07:56 Asia/Calcutta] PHP Notice:  Undefined variable: ss in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:07:56 Asia/Calcutta] PHP Notice:  Undefined variable: 1111 in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 20:07:56 Asia/Calcutta] PHP Notice:  Undefined variable: naik@gamil.com in /var/www/core-php/Controllers/Login.php on line 28
+[18-Aug-2021 23:52:37 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 35
+[18-Aug-2021 23:55:32 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[18-Aug-2021 23:55:32 Asia/Calcutta] Please check the parameters given to array_get
+[18-Aug-2021 23:58:43 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[18-Aug-2021 23:58:53 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[18-Aug-2021 23:58:53 Asia/Calcutta] Please check the parameters given to array_get
+[18-Aug-2021 23:59:45 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[18-Aug-2021 23:59:46 Asia/Calcutta] Please check the parameters given to array_get
+[19-Aug-2021 00:00:04 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:00:04 Asia/Calcutta] Please check the parameters given to array_get
+[19-Aug-2021 00:00:25 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:00:25 Asia/Calcutta] Please check the parameters given to array_get
+[19-Aug-2021 00:01:59 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:02:38 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:03:03 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:03:14 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:03:14 Asia/Calcutta] PHP Fatal error:  Cannot use object of type mysqli_result as array in /var/www/core-php/settings.php on line 27
+[19-Aug-2021 00:06:28 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:06:28 Asia/Calcutta] PHP Fatal error:  Cannot use object of type mysqli_result as array in /var/www/core-php/settings.php on line 27
+[19-Aug-2021 00:06:43 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:06:51 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 17
+[19-Aug-2021 00:06:51 Asia/Calcutta] PHP Fatal error:  Cannot use object of type mysqli_result as array in /var/www/core-php/settings.php on line 27
+[19-Aug-2021 00:07:28 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:07:30 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:07:33 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:16 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:16 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:19 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:48 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:48 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:50 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:50 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:50 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:50 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:51 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:51 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:08:51 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:08:51 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:09:46 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 00:09:46 Asia/Calcutta] PHP Fatal error:  Cannot use object of type mysqli_result as array in /var/www/core-php/settings.php on line 27
+[19-Aug-2021 00:10:50 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 23
+[19-Aug-2021 00:10:50 Asia/Calcutta] PHP Fatal error:  Cannot use object of type mysqli_result as array in /var/www/core-php/settings.php on line 27
+[19-Aug-2021 00:12:02 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 23
+[19-Aug-2021 00:12:27 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:12:29 Asia/Calcutta] PHP Notice:  Undefined index: user_id in /var/www/core-php/Controllers/Login.php on line 14
+[19-Aug-2021 00:12:29 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:12:29 Asia/Calcutta] PHP Notice:  Undefined index: user_id in /var/www/core-php/Controllers/Login.php on line 14
+[19-Aug-2021 00:12:35 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:12:35 Asia/Calcutta] PHP Notice:  Undefined index: user_id in /var/www/core-php/Controllers/Login.php on line 14
+[19-Aug-2021 00:12:42 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:12:42 Asia/Calcutta] PHP Notice:  Undefined index: user_id in /var/www/core-php/Controllers/Login.php on line 14
+[19-Aug-2021 00:12:44 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:12:44 Asia/Calcutta] PHP Notice:  Undefined index: user_id in /var/www/core-php/Controllers/Login.php on line 14
+[19-Aug-2021 00:13:10 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:10 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:13:31 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:31 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:13:39 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 00:13:42 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:42 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:13:45 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:45 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:13:46 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:46 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:13:47 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:47 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:13:48 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:13:48 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:14:05 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:05 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:14:18 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 00:14:22 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:23 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:24 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:25 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:25 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:47 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:14:47 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:15:10 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:15:10 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:15:14 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:15:14 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:15:17 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:15:17 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 00:15:23 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 00:15:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:09:49 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:09:49 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:09:54 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:09:54 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:10:03 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 11:10:09 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:09 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:10:11 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:11 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:10:19 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:19 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:10:22 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:22 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:10:30 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 11:10:38 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:40 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:40 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 11:10:42 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 11:10:42 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 12:39:57 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 12:39:57 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 12:40:04 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 12:52:42 Asia/Calcutta] PHP Warning:  include(navbar): failed to open stream: No such file or directory in /var/www/core-php/views/index.php on line 11
+[19-Aug-2021 12:52:42 Asia/Calcutta] PHP Warning:  include(): Failed opening 'navbar' for inclusion (include_path='.:/usr/share/php') in /var/www/core-php/views/index.php on line 11
+[19-Aug-2021 13:44:21 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 13:44:21 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 13:44:27 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 21:59:49 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 21:59:50 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 22:00:00 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[19-Aug-2021 23:10:13 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[19-Aug-2021 23:10:13 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[19-Aug-2021 23:10:32 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[20-Aug-2021 10:35:49 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 10:35:50 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 10:36:07 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 10:36:07 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 10:36:22 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 10:36:22 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 10:41:31 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[20-Aug-2021 21:20:20 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 21:20:20 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 21:20:20 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 21:20:20 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 21:20:20 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 21:20:20 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 21:20:21 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 21:20:21 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 21:20:21 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 21:20:21 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[20-Aug-2021 21:20:27 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[20-Aug-2021 21:20:27 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 09:08:53 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:08:53 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 09:08:59 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[21-Aug-2021 09:10:02 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:10:04 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:10:15 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:10:19 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:10:49 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:23:02 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 14
+[21-Aug-2021 09:23:22 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[21-Aug-2021 09:24:02 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[21-Aug-2021 09:24:05 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 09:24:09 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[21-Aug-2021 09:24:14 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 10:15:43 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 10:15:43 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 11:06:23 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 11:06:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 11:06:23 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 11:06:23 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 11:06:28 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 11:06:28 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 11:06:33 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[21-Aug-2021 11:06:33 Asia/Calcutta] PHP Notice:  Undefined variable: password in /var/www/core-php/Controllers/Login.php on line 37
+[21-Aug-2021 11:06:36 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 11:06:36 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 11:06:39 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[21-Aug-2021 12:41:42 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[21-Aug-2021 12:41:42 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[21-Aug-2021 12:41:48 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[21-Aug-2021 12:41:54 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[21-Aug-2021 12:43:34 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[21-Aug-2021 12:58:25 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[22-Aug-2021 15:04:42 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:04:42 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:04:57 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:04:57 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:05:12 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:05:12 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:05:23 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[22-Aug-2021 15:06:00 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 15
+[22-Aug-2021 15:09:55 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 14
+[22-Aug-2021 15:09:55 Asia/Calcutta] PHP Notice:  Array to string conversion in /var/www/core-php/Controllers/UserController.php on line 16
+[22-Aug-2021 15:17:28 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 14
+[22-Aug-2021 15:17:28 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:17:28 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:19:36 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 14
+[22-Aug-2021 15:19:36 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:19:36 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:21:30 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 14
+[22-Aug-2021 15:21:30 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:21:30 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:21:41 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 14
+[22-Aug-2021 15:21:41 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:21:41 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:23:29 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 14
+[22-Aug-2021 15:23:29 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:23:29 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:24:28 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 16
+[22-Aug-2021 15:24:28 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:24:28 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:24:28 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:24:28 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:24:50 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:24:50 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:31:29 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:31:29 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:31:31 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:31:31 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:31:32 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:31:32 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:31:32 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:31:32 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:31:32 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:31:32 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:31:35 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[22-Aug-2021 15:32:21 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:32:21 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 15:58:55 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:58:55 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:59:01 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 15:59:01 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 15:59:05 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[22-Aug-2021 16:14:34 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 16:14:34 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 16:14:38 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 16:14:38 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 19
+[22-Aug-2021 16:14:41 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[22-Aug-2021 16:14:50 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/UserController.php on line 16
+[22-Aug-2021 16:14:50 Asia/Calcutta] PHP Warning:  require(): Filename cannot be empty in /var/www/core-php/index.php on line 17
+[22-Aug-2021 16:14:50 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 16:18:14 Asia/Calcutta] PHP Warning:  require(/var/www/core-php/../views/login.php): failed to open stream: No such file or directory in /var/www/core-php/index.php on line 17
+[22-Aug-2021 16:18:14 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '/var/www/core-php/../views/login.php' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 16:18:14 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 16:18:14 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 18
+[22-Aug-2021 16:18:18 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22
+[22-Aug-2021 16:30:59 Asia/Calcutta] PHP Warning:  require(/var/www/core-php/../views/login.php): failed to open stream: No such file or directory in /var/www/core-php/index.php on line 17
+[22-Aug-2021 16:30:59 Asia/Calcutta] PHP Fatal error:  require(): Failed opening required '/var/www/core-php/../views/login.php' (include_path='.:/usr/share/php') in /var/www/core-php/index.php on line 17
+[22-Aug-2021 16:30:59 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 16:30:59 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 18
+[22-Aug-2021 16:31:01 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 13
+[22-Aug-2021 16:31:01 Asia/Calcutta] PHP Fatal error:  Cannot break/continue 1 level in /var/www/core-php/Middlewares/AuthMiddleware.php on line 18
+[22-Aug-2021 16:31:05 Asia/Calcutta] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/core-php/Controllers/Login.php on line 22

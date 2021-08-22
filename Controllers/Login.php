@@ -26,14 +26,9 @@ class Login
             return $home->showHomePage();
         }
         $login = new LoginDetail();
-        $user_data = $login->getRows([], ['username' => $_POST['username']]);
-        if ($user_data->num_rows > 0) {
-            while ($row = $user_data->fetch_assoc()) {
-                $password = $row['password'];
-                $user_id = $row['user_id'];
-                break;
-            }
-        }
+        $user_data = toArray($login->getRows([], ['username' => $_POST['username']]));
+        $password = array_get($user_data, "0.password");
+        $user_id = array_get($user_data, "0.user_id");
         if (!password_verify($_POST['password'], $password))
             die('Invalid password.');
 
@@ -57,13 +52,13 @@ class Login
     }
     public function registrationPage()
     {
-        return  __DIR__ . '/../views/registration.php';
+        return  DOCUMENT_ROOT . '/../views/registration.php';
     }
     public function logout()
     {
         session_unset();
         session_destroy();
         header("Location: /home");
-        return  __DIR__ . '/../views/login.php';
+        return  DOCUMENT_ROOT . '/../views/login.php';
     }
 }

@@ -6,7 +6,6 @@ const ROUTES = [
     '/about'     =>  ['GET' => 'Home@showAboutPage'],
     '/home'     =>  ['GET' => 'Home@showHomePage', 'POST' => 'Login@loginUser'],
     '/registration' => ['GET' => 'Login@registrationPage', 'POST' => 'Login@registerUser'],
-    '/logout'     => ['GET' => 'Login@logout']
+    '/logout'     => ['POST' => 'Login@logout'],
+    '/uploadpost' => ['POST' => 'UserController@uploadPost']
 ];
-
-//header("Location: /about");

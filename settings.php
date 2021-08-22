@@ -6,7 +6,7 @@ ini_set("log_errors", TRUE);
 ini_set('error_log', ERROR_LOG);
 if (!defined('SERVERNAME')) define('SERVERNAME', "localhost");
 if (!defined('USER')) define('USER', "root");
-if (!defined('PASSWORD')) define('PASSWORD', "*****");
+if (!defined('PASSWORD')) define('PASSWORD', "******");
 if (!defined('DBNAME')) define('DBNAME', "coredb");
 
 #autoloader for namespace and class
@@ -28,6 +28,22 @@ function array_get($array = [], $needle, $default = null)
             $array =  $array[$key];
         }
         return !empty($array) ? $array : $default;
+    } catch (Exception $e) {
+        error_log("Exception: " . $e->getMessage());
+    }
+}
+
+#Method to convert mysql object to array
+function toArray($object)
+{
+    try {
+        $data = [];
+        if ($object->num_rows > 0) {
+            while ($row = $object->fetch_assoc()) {
+                $data[] = $row;
+            }
+        }
+        return $data;
     } catch (Exception $e) {
         error_log("Exception: " . $e->getMessage());
     }

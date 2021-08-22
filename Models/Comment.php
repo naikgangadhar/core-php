@@ -16,14 +16,8 @@ class Comment extends AbstractModel
     public function getComments($user_id)
     {
         try {
-            $data = [];
             $result = $this->getRows([], ['user_id' => $user_id]);
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    $data[] = $row;
-                }
-            }
-            return $data;
+            return toArray($result);
         } catch (Exception $e) {
             error_log("Exception: " . $e->getMessage());
         }
