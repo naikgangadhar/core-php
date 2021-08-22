@@ -52,7 +52,7 @@ class Login
     }
     public function registrationPage()
     {
-        return  DOCUMENT_ROOT . '/../views/registration.php';
+        return  DOCUMENT_ROOT . '/views/registration.php';
     }
     public function logout()
     {
