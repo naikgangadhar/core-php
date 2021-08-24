@@ -10,37 +10,31 @@ class Login
 
     public function loginPage()
     {
-        session_start();
         if (!empty($_SESSION["user_id"])) {
             $home = new Home();
             return $home->showHomePage();
         }
         return  view('login.php');
     }
+
     public function loginUser()
     {
-        session_start();
-        if (!empty($_SESSION["user_id"])) {
-            header("Location: /home");
-            $home = new Home();
+        $home = new Home();
+        header("Location: /home");
+        if (!empty($_SESSION["user_id"]))
             return $home->showHomePage();
-        }
+
         $login = new LoginDetail();
         $user_data = toArray($login->getRows([], ['username' => $_POST['username']]));
-        $password = array_get($user_data, "0.password");
-        $user_id = array_get($user_data, "0.user_id");
-        if (!password_verify($_POST['password'], $password))
+        if (!password_verify($_POST['password'], array_get($user_data, "0.password")))
             die('Invalid password.');
 
-        $_SESSION["user_id"] =  $user_id;
-        header("Location: /home");
-        $home = new Home();
+        $_SESSION["user_id"] =  array_get($user_data, "0.user_id");
         return $home->showHomePage();
     }
 
     public function registerUser()
     {
-        session_start();
         $user = new User();
         $login = new LoginDetail();
         $user_id = $user->insertRowGetID(['name' => $_POST['name'], 'contact_no' => $_POST['contact_no'], 'email' => $_POST['email']]);
@@ -50,10 +44,12 @@ class Login
         $home = new Home();
         return $home->showHomePage();
     }
+
     public function registrationPage()
     {
         return  view('registration.php');
     }
+
     public function logout()
     {
         session_unset();
@@ -61,4 +57,5 @@ class Login
         header("Location: /home");
         return  view('login.php');
     }
+    
 }

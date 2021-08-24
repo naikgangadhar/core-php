@@ -9,6 +9,7 @@ use Middlewares\AuthMiddleware;
 try {
     $method = array_get(ROUTES, $_SERVER['REQUEST_URI'] . "." . $_SERVER['REQUEST_METHOD']);
     $method = explode("@", $method);
+    session_start();
     if (!empty($method[0]) && !empty($method[1])) {
         $auth = new AuthMiddleware();
         $auth->validateLogin();
