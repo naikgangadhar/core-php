@@ -10,7 +10,7 @@ class LoginDetail extends AbstractModel
 
     public function __construct()
     {
-        parent::__construct(SERVERNAME, USER, PASSWORD, DBNAME);
+        parent::__construct();
     }
 
     public function getLoginDetails($user_id)

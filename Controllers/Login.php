@@ -15,7 +15,7 @@ class Login
             $home = new Home();
             return $home->showHomePage();
         }
-        return  DOCUMENT_ROOT . '/views/login.php';
+        return  view('login.php');
     }
     public function loginUser()
     {
@@ -52,13 +52,13 @@ class Login
     }
     public function registrationPage()
     {
-        return  DOCUMENT_ROOT . '/views/registration.php';
+        return  view('registration.php');
     }
     public function logout()
     {
         session_unset();
         session_destroy();
         header("Location: /home");
-        return  DOCUMENT_ROOT . '/../views/login.php';
+        return  view('login.php');
     }
 }

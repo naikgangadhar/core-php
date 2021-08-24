@@ -16,16 +16,16 @@ class Home
         $data['user_data'] = $user->getUser($_SESSION["user_id"]);
         $data['posts'] = $post->getPosts($_SESSION["user_id"]);
         $_GET['data'] = $data;
-        return  __DIR__ . '/../views/index.php';
+        return  view('index.php');
     }
 
     public function showAboutPage()
     {
-        return  __DIR__ . '/../views/about.php';
+        return  view('about.php');
     }
 
     public function showErrorPage()
     {
-        return  __DIR__ . '/../views/404.php';
+        return  view('404.php');
     }
 }

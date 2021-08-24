@@ -10,7 +10,7 @@ class Post extends AbstractModel
 
     public function __construct()
     {
-        parent::__construct(SERVERNAME, USER, PASSWORD, DBNAME);
+        parent::__construct();
     }
 
     public function getPosts($user_id)

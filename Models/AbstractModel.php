@@ -12,9 +12,9 @@ abstract class AbstractModel
 
     protected $table;
 
-    public function __construct($servername, $user, $password, $dbname)
+    public function __construct()
     {
-        $this->connection = new mysqli($servername, $user, $password, $dbname);
+        $this->connection = new mysqli(SERVERNAME, USER, PASSWORD, DBNAME);
 
         if ($this->connection->connect_error) {
             error_log("Connection failed: " . $this->connection->connect_error);
